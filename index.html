@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Kaufmann - Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="3600973.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">SK</div>
+            <ul class="nav-menu">
+                <li><a href="#sobre-mi" class="nav-link" data-key="nav_about">Sobre Mí</a></li>
+                <li><a href="#experiencia" class="nav-link" data-key="nav_exp">Experiencia</a></li>
+                <li><a href="#habilidades" class="nav-link" data-key="nav_skills">Habilidades</a></li>
+                <li><a href="#formacion" class="nav-link" data-key="nav_edu">Formación</a></li>
+                <li><a href="#otras-experiencias" class="nav-link" data-key="nav_other">Otras Experiencias</a></li>
+                <li><a href="#contacto" class="nav-link" data-key="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('es')" id="btn-es" class="lang-btn active">ES</button>
+                <button onclick="changeLanguage('en')" id="btn-en" class="lang-btn">EN</button>
+            </div>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="header">
+        <div class="profile-img-container">
+            <img src="perfil.png" alt="Sebastian Kaufmann" class="profile-img">
+        </div>
+        <div class="header-info">
+            <h1>SEBASTIAN<br>KAUFMANN</h1>
+            <h2 data-key="header_subtitle">ESTUDIANTE DE INGENIERÍA CIVIL INDUSTRIAL</h2>
+            <div class="contact-badges">
+                <span class="contact-badge"><i class="fas fa-phone"></i> +56944421697</span>
+                <span class="contact-badge"><i class="fas fa-envelope"></i> s.kaufmann015@gmail.com</span>
+                <span class="contact-badge"><i class="fas fa-map-marker-alt"></i> Temuco, Chile</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="sobre-mi">
+            <h3 data-key="about_title">Sobre Mí</h3>
+            <p data-key="about_text">Profesional en formación de 23 años enfocado en gestión operativa, simulación de procesos y trabajo interdisciplinario. Destaca por su proactividad, análisis y liderazgo en proyectos académicos y emprendimientos.</p>
+            <a href="curriculum_sebastian.pdf" id="cv-link" download class="download-btn">
+                <i class="fas fa-download"></i> <span data-key="btn_cv">Descargar CV en PDF</span>
+            </a>
+        </section>
+
+        <section id="experiencia">
+            <h3 data-key="exp_title">Experiencia Laboral</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">SILS empresa logística</span>
+                        <span class="timeline-date">2026</span>
+                    </div>
+                    <div class="timeline-role" data-key="exp_role1">Práctica 2</div>
+                    <ul>
+                        <li data-key="exp_desc1">Apoyo en el seguimiento de pedidos, control de inventarios y registro de información.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">Sociedad de Inspecciones Técnicas Tco</span>
+                        <span class="timeline-date">2025</span>
+                    </div>
+                    <div class="timeline-role" data-key="exp_role2">Práctica 1</div>
+                    <ul>
+                        <li data-key="exp_desc2">Apoyo en la planificación, ejecución, logística y seguimiento de inspecciones de hermeticidad a estanques.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-header">
+                        <span class="timeline-company">Liceo Camilo Henríquez</span>
+                        <span class="timeline-date">2022</span>
+                    </div>
+                    <div class="timeline-role" data-key="exp_role3">Digitador</div>
+                    <ul>
+                        <li data-key="exp_desc3">Apoyo administrativo y digitalización documental.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h3 data-key="skills_title">Habilidades y Competencias</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fas fa-tasks"></i><span data-key="skill1">Gestión de Proyectos</span></div>
+                <div class="skill-card"><i class="fas fa-project-diagram"></i><span data-key="skill2">Simulación (Arena, AnyLogic)</span></div>
+                <div class="skill-card"><i class="fas fa-sitemap"></i><span data-key="skill3">Modelamiento de Procesos</span></div>
+                <div class="skill-card"><i class="fas fa-clipboard-list"></i><span data-key="skill4">Coordinación Administrativa</span></div>
+                <div class="skill-card"><i class="fas fa-chart-pie"></i><span data-key="skill5">Power BI y Excel Avanzado</span></div>
+                <div class="skill-card"><i class="fas fa-users"></i><span data-key="skill6">Trabajo en Equipo y Liderazgo</span></div>
+            </div>
+        </section>
+
+        <section id="idiomas">
+            <h3 data-key="lang_title">Idiomas</h3>
+            <div class="languages">
+                <div class="lang-item">
+                    <div class="lang-name" data-key="lang_es">Español</div>
+                    <div class="lang-bar-bg"><div class="lang-bar-fill" data-width="100%"></div></div>
+                    <div class="lang-level" data-key="lang_level_native">Nivel Nativo</div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-name" data-key="lang_en">Inglés</div>
+                    <div class="lang-bar-bg"><div class="lang-bar-fill" data-width="75%"></div></div>
+                    <div class="lang-level">Nivel B2</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion">
+            <h3 data-key="edu_title">Datos Académicos y Cursos</h3>
+            <div class="academic-grid">
+                <div class="academic-item">
+                    <strong>Universidad de La Frontera</strong>
+                    <span data-key="edu_degree">Ingeniería Civil Industrial (6º año)</span>
+                    <span data-key="status_current">(En curso)</span>
+                </div>
+                <div class="academic-item">
+                    <strong>Universidad de La Frontera</strong>
+                    <span data-key="edu_degree_lic">Licenciatura en Ciencias de la Ingeniería</span>
+                </div>
+                <div class="academic-item">
+                    <strong>Cursos ASR</strong>
+                    <span data-key="course_1">Power BI Intermedio y Avanzado</span>
+                </div>
+                <div class="academic-item">
+                    <strong>Cursos ASR</strong>
+                    <span data-key="course_2">Excel Intermedio y Avanzado</span>
+                </div>
+                <div class="academic-item">
+                    <strong>Cursos ASR</strong>
+                    <span data-key="course_3">Técnicas de Gestión Logística</span>
+                </div>
+                <div class="academic-item">
+                    <strong>Colegio George Chaytor</strong>
+                    <span data-key="edu_highschool">Enseñanza media y básica</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="otras-experiencias">
+            <h3 data-key="other_title">Congresos y Otras Experiencias</h3>
+            <div class="other-exp-grid">
+                <div class="other-exp-card">
+                    <h4>Congreso IISE-CITIC 2025</h4>
+                    <p data-key="other_desc1">Expositor: Presentación en sesión paralela.</p>
+                </div>
+                <div class="other-exp-card">
+                    <h4>Congreso IISE-CITIC 2025</h4>
+                    <p data-key="other_desc2">Organizador: Miembro de la comisión de programa y operaciones.</p>
+                </div>
+                <div class="other-exp-card">
+                    <h4>CIG 2024</h4>
+                    <p data-key="other_desc3">Participante: Congreso de Ingeniería Global 2024.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h3 data-key="contact_title">Contacto</h3>
+            <div class="contact-form">
+                <form id="contactForm" action="https://formspree.io/f/xnjlgalk" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" data-placeholder-key="contact_name_ph" required>
+                    <input type="email" id="email" name="email" placeholder="Tu email" data-placeholder-key="contact_email_ph" required>
+                    <textarea id="message" name="message" placeholder="Tu mensaje" data-placeholder-key="contact_msg_ph" required></textarea>
+                    <button type="submit" data-key="contact_btn">Enviar Mensaje</button>
+                    <p id="form-status" style="display:none; text-align:center; margin-top:10px; color:var(--accent-color); font-weight:500;"></p>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Sebastian Kaufmann. <span data-key="footer_rights">Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
