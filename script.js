@@ -197,6 +197,12 @@ if (contactForm) {
     });
 }
 
+// --- AQUÍ ESTÁ EL CAMBIO PARA LOS ARCHIVOS PDF ---
+const cvFiles = {
+    es: "curriculums/curriculum_es.pdf",
+    en: "curriculums/curriculum_en.pdf"
+};
+
 function changeLanguage(lang) {
     document.querySelectorAll('[data-key]').forEach(element => {
         const key = element.getAttribute('data-key');
@@ -213,6 +219,12 @@ function changeLanguage(lang) {
         const key = element.getAttribute('data-placeholder-key');
         element.setAttribute('placeholder', translations[lang][key]);
     });
+
+    // Actualiza el enlace del CV
+    const cvLink = document.getElementById('cv-link');
+    if (cvLink) {
+        cvLink.href = cvFiles[lang];
+    }
 
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
     const currentBtn = document.getElementById('btn-' + lang);
